@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row" id="sign-form">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h1>Qeydiyyat formu</h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="forms w-100">
+                            <label for="name" class="form-label">Adiniz</label>
+                            <input type="text" id="name" class="form-control">
+                        </div>
+                        <div class="forms w-100">
+                            <label for="surname" class="form-label">Soyadiniz</label>
+                            <input type="text" id="surname" class="form-control">
+                        </div>
+                        <div class="forms w-100">
+                            <label for="email" class="form-label">Epoct</label>
+                            <input type="email" id="email" class="form-control">
+                        </div>
+                        <div class="forms w-100">
+                            <label for="phone" class="form-label">Telefon</label>
+                            <input type="text" id="phone" class="form-control">
+                        </div>
+                        <div class="forms w-100">
+                            <label for="age" class="form-label">Yasiniz</label>
+                            <input type="date" id="age" class="form-control">
+                        </div>
+                        <div class="forms w-100">
+                            <label for="password" class="form-label">Parol</label>
+                            <input type="password" id="password" class="form-control">
+                        </div>
+                        <div class="forms w-100">
+                            <label for="repeat-password" class="form-label">Parolun tekrari</label>
+                            <input type="password" id="repeat-password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <button class="btn btn-success" id="createNewUser">Qeydiyyatdan kec</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h1>Giris formu</h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="forms w-100">
+                            <label for="useremail" class="form-label">Epoct</label>
+                            <input type="email" id="useremail" class="form-control">
+                        </div>
+                        <div class="forms w-100">
+                            <label for="userpassword" class="form-label">Parol</label>
+                            <input type="password" id="userpassword" class="form-control">
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <button class="btn btn-success" id="login">Daxil ol</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="account">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h1>Qeydiyyat formu</h1>
+                    </div>
+                    <div class="card-body">
+                        <input type="hidden" id="loggedEmail">
+                        <div class="forms w-100">
+                            <label for="current-password" class="form-label">Cari Parol</label>
+                            <input type="password" id="current-password" class="form-control">
+                        </div>
+                        <div class="forms w-100">
+                            <label for="new-password" class="form-label">Yeni Parol</label>
+                            <input type="password" id="new-password" class="form-control">
+                        </div>
+                        <div class="forms w-100">
+                            <label for="new-repeat-password" class="form-label">Yeni Parolun tekrari</label>
+                            <input type="password" id="new-repeat-password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <button class="btn btn-success" id="updatePassword">Parolu yenile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <button id="logout">hesabdan cix</button>
+                    </div>
+                    <div class="card-body">
+                        <span>hesabinizi silmek isteyirsiniz?</span>
+                        <button id="delete-account">SIL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./users.js"></script>
+
+</body>
+
+</html>
